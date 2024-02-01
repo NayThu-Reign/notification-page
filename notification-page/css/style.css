@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+}
+
+header .noti-box {
+    display: flex;
+    align-items: center;
+}
+
+header .unread-nums {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    background-color: hsl(219, 85%, 26%);
+    color: hsl(0, 0%, 100%);
+    font-size: 25px;
+}
+
+#mark-read {
+    cursor: pointer;
+    font-size: 15px;
+    color: hsl(219, 12%, 42%);
+}
+
+main .noti-card {
+    margin-bottom: 30px;
+    display: flex;
+    height: 100%;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.description {
+    display: flex;
+}
+
+.description img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.user-activity {
+    margin-left: 15px;
+}
+
+.user-activity a {
+    text-decoration: none;
+    font-size: 13px;
+    color: hsl(244, 92%, 40%);
+    
+}
+.user-activity a:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.user-activity p {
+    line-height: 20px;
+    color: hsl(219, 12%, 42%);
+}
+
+strong {
+    color: black;
+    cursor: pointer;
+}
+strong:hover {
+    color: hsl(244, 92%, 40%);
+}
+
+.time {
+    color: hsl(219, 12%, 42%);
+}
+
+b {
+    color: hsl(219, 12%, 42%);
+}
+.message {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.message img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.message-card{
+    padding: 7px;
+    font-size: 15px;
+    border: 1px solid hsl(205, 33%, 90%);
+    border-radius: 5px;
+    margin: 0 0 0 60px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.message-card:hover {
+    background-color: hsl(211, 68%, 94%);
+}
+
+.unread {
+    background-color: hsl(211, 68%, 94%);
+}
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo {
+    width: 45px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.unread p:first-of-type::after {
+    content: "";
+    background-color: hsl(1, 90%, 64%);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+@media(max-width: 550px) {
+    .container {
+        margin: 0;
+    }
+}
+
